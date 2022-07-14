@@ -15,5 +15,6 @@ public class Main {
 		double media = (a + b + c) / 10;
 
 		System.out.printf("MEDIA = %.1f%n", media);
+		
 	}
 }
