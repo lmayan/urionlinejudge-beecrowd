@@ -8,13 +8,13 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		double a = sc.nextDouble() * 2;
-		double b = sc.nextDouble() * 3;
-		double c = sc.nextDouble() * 5;
-		
-		double media = (a + b + c) / 10;
+		int num = sc.nextInt();
+		int horas = sc.nextInt();
+		double vlrHoras = sc.nextDouble();
 
-		System.out.printf("MEDIA = %.1f%n", media);
-		
+		double salary = horas * vlrHoras;
+
+		System.out.println("NUMBER = " + num);
+		System.out.printf("SALARY = U$ %.2f%n", salary);
 	}
 }
