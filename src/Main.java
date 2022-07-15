@@ -8,13 +8,12 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		int num = sc.nextInt();
-		int horas = sc.nextInt();
-		double vlrHoras = sc.nextDouble();
+		String nome = sc.next();
+		double salario = sc.nextDouble();
+		double totVendas = sc.nextDouble();
 
-		double salary = horas * vlrHoras;
+		double totSalario = salario + (totVendas * 0.15);
 
-		System.out.println("NUMBER = " + num);
-		System.out.printf("SALARY = U$ %.2f%n", salary);
+		System.out.printf("TOTAL = R$ %.2f%n", totSalario);
 	}
 }
