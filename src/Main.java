@@ -8,11 +8,21 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
+		double a = sc.nextDouble();
+		double b = sc.nextDouble();
+		double c = sc.nextDouble();
 		double pi = 3.14159;
-		double r = sc.nextDouble();
 
-		double volume = (4.0 / 3) * pi * (r * r * r);
+		double tri = (a * c) / 2;
+		double circ = pi * (c * c);
+		double trap = (a + b) * c / 2;
+		double quad = b * b;
+		double ret = a * b;
 
-		System.out.printf("VOLUME = %.3f%n", volume);
+		System.out.printf("TRIANGULO: %.3f%n", tri);
+		System.out.printf("CIRCULO: %.3f%n", circ);
+		System.out.printf("TRAPEZIO: %.3f%n", trap);
+		System.out.printf("QUADRADO: %.3f%n", quad);
+		System.out.printf("RETANGULO: %.3f%n", ret);
 	}
 }
