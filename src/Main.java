@@ -8,12 +8,16 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		String nome = sc.next();
-		double salario = sc.nextDouble();
-		double totVendas = sc.nextDouble();
+		int cod1 = sc.nextInt();
+		int qtdePeca1 = sc.nextInt();
+		double vlrPeca1 = sc.nextDouble();
 
-		double totSalario = salario + (totVendas * 0.15);
+		int cod2 = sc.nextInt();
+		int qtdePeca2 = sc.nextInt();
+		double vlrPeca2 = sc.nextDouble();
 
-		System.out.printf("TOTAL = R$ %.2f%n", totSalario);
+		double totPedido = qtdePeca1 * vlrPeca1 + qtdePeca2 * vlrPeca2;
+
+		System.out.printf("VALOR A PAGAR: R$ %.2f%n", totPedido);
 	}
 }
