@@ -8,21 +8,18 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		double a = sc.nextDouble();
-		double b = sc.nextDouble();
-		double c = sc.nextDouble();
-		double pi = 3.14159;
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = sc.nextInt();
+		int maior = 0;
 
-		double tri = (a * c) / 2;
-		double circ = pi * (c * c);
-		double trap = (a + b) * c / 2;
-		double quad = b * b;
-		double ret = a * b;
+		int comparacao = (a + b + Math.abs(a - b)) / 2;
+		if (comparacao > c) {
+			maior = comparacao;
+		} else {
+			maior = c;
+		}
 
-		System.out.printf("TRIANGULO: %.3f%n", tri);
-		System.out.printf("CIRCULO: %.3f%n", circ);
-		System.out.printf("TRAPEZIO: %.3f%n", trap);
-		System.out.printf("QUADRADO: %.3f%n", quad);
-		System.out.printf("RETANGULO: %.3f%n", ret);
+		System.out.println(maior + " eh o maior");
 	}
 }
