@@ -8,16 +8,11 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		int cod1 = sc.nextInt();
-		int qtdePeca1 = sc.nextInt();
-		double vlrPeca1 = sc.nextDouble();
+		double pi = 3.14159;
+		double r = sc.nextDouble();
 
-		int cod2 = sc.nextInt();
-		int qtdePeca2 = sc.nextInt();
-		double vlrPeca2 = sc.nextDouble();
+		double volume = (4.0 / 3) * pi * (r * r * r);
 
-		double totPedido = qtdePeca1 * vlrPeca1 + qtdePeca2 * vlrPeca2;
-
-		System.out.printf("VALOR A PAGAR: R$ %.2f%n", totPedido);
+		System.out.printf("VOLUME = %.3f%n", volume);
 	}
 }
