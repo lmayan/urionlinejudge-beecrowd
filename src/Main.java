@@ -8,18 +8,12 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		int a = sc.nextInt();
-		int b = sc.nextInt();
-		int c = sc.nextInt();
-		int maior = 0;
+		int km = sc.nextInt();
+		double lit = sc.nextDouble();
 
-		int comparacao = (a + b + Math.abs(a - b)) / 2;
-		if (comparacao > c) {
-			maior = comparacao;
-		} else {
-			maior = c;
-		}
+		double media = km / lit;
 
-		System.out.println(maior + " eh o maior");
+		System.out.printf("%.3f", media);
+		System.out.println(" km/l");
 	}
 }
