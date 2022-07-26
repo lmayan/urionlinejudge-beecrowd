@@ -8,12 +8,14 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		int km = sc.nextInt();
-		double lit = sc.nextDouble();
+		double x1 = sc.nextDouble();
+		double y1 = sc.nextDouble();
+		double x2 = sc.nextDouble();
+		double y2 = sc.nextDouble();
 
-		double media = km / lit;
+		double distanciaXY = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
 
-		System.out.printf("%.3f", media);
-		System.out.println(" km/l");
+		System.out.printf("%.4f%n", distanciaXY);
+		sc.close();
 	}
 }
