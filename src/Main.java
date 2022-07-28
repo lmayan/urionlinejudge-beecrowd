@@ -8,14 +8,17 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		double x1 = sc.nextDouble();
-		double y1 = sc.nextDouble();
-		double x2 = sc.nextDouble();
-		double y2 = sc.nextDouble();
+		int x = 60;
+		int y = 90;
+		int dif = y - x;
+		int hora = 60;
+		int calc = 60 / dif;
 
-		double distanciaXY = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+		int tempo = sc.nextInt();
 
-		System.out.printf("%.4f%n", distanciaXY);
+		int distanciaXY = tempo * calc;
+
+		System.out.println(distanciaXY + " minutos");
 		sc.close();
 	}
 }
