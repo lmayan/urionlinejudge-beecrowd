@@ -8,17 +8,13 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		int x = 60;
-		int y = 90;
-		int dif = y - x;
-		int hora = 60;
-		int calc = 60 / dif;
+		double kmL = 12;
+		double tempo = sc.nextDouble();
+		double velocMedia = sc.nextDouble();
 
-		int tempo = sc.nextInt();
+		double litros = tempo * velocMedia / kmL;
 
-		int distanciaXY = tempo * calc;
-
-		System.out.println(distanciaXY + " minutos");
+		System.out.printf("%.3f%n", litros);
 		sc.close();
 	}
 }
